@@ -150,3 +150,104 @@ h2 {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   margin-top: 80px;
 }
+
+/* Hero Layout with Photo */
+.hero {
+  padding: 120px 20px 100px;
+  text-align: center;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid rgba(88, 166, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #e6edf3, #a3bffa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+  font-size: 1.35rem;
+  color: #8b949e;
+  margin-bottom: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+  }
+}
+
+/* Contact Page Styles */
+.contact-content {
+  max-width: 700px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.contact-card {
+  background: #161b22;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 50px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-card h2 {
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #58a6ff;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  margin: 18px 0;
+  color: #c9d1d9;
+}
+
+.contact-info a {
+  color: #58a6ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #a3d0ff;
+}
+
+.note {
+  margin-top: 40px;
+  color: #8b949e;
+  font-style: italic;
+  font-size: 1.05rem;
+}
